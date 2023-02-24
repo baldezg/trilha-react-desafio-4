@@ -7,6 +7,7 @@ import * as yup from "yup";
 import { Container, LoginContainer, Column, Spacing, Title } from "./styles";
 import { defaultValues, IFormLogin } from "./types";
 
+
 const schema = yup
   .object({
     email: yup.string().email("E-mail inválido").required("Campo obrigatório"),
@@ -15,7 +16,7 @@ const schema = yup
       .min(6, "No minimo 6 caracteres")
       .required("Campo obrigatório")
       .matches(
-        /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])$/,
+       /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}$/,
         'Senha deve ter pelo menos uma letra maiúscula, um número e um caractere especial'
       ),
   })
@@ -31,7 +32,7 @@ const Login = () => {
     defaultValues,
     reValidateMode: "onChange",
   });
-
+console.log(!isValid)
   return (
     <Container>
       <LoginContainer>
@@ -53,7 +54,7 @@ const Login = () => {
             errorMessage={errors?.password?.message}
           />
           <Spacing />
-          <Button title="Entrar" />
+            <Button title="Entrar" disabled={!isValid} onClick={() => console.log("formulario enviado")} />
         </Column>
       </LoginContainer>
     </Container>
