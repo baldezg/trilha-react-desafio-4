@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/global.ts"],
+  "sourcesContent": ["import { createGlobalStyle } from 'styled-components';\n\nexport default createGlobalStyle`\n    * {\n        margin: 0;\n        padding: 0;\n        font-family: 'Nunito', sans-serif;\n        box-sizing:  border-box;\n    }\n\n    body {\n        font-family: 'Nunito', sans-serif;\n        margin: 0;\n        padding: 0;\n        background-color: #81259D;\n    }\n\n    input, button, textarea, h1, h2, h3, h4, h5, h6 {\n        font-family: 'Nunito', sans-serif;\n    }\n`"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,+BAAkC;AAElC,IAAO,iBAAQ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;",
+  "names": []
+}

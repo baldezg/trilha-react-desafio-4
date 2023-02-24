@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/components/Button/styles.ts"],
+  "sourcesContent": ["import styled from 'styled-components';\n\n\nexport const ButtonContainer = styled.button`\n    width: 100%;\n    height: 42px;\n    background-color: #81259D;\n    color: #FFF;\n\n    border: 1px solid #81259D;\n    border-radius: 21px;\n\n    &:hover {\n        opacity: 0.6;\n        cursor:pointer;\n    }\n`"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,+BAAmB;AAGZ,MAAM,kBAAkB,yBAAAA,QAAO;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;",
+  "names": ["styled"]
+}

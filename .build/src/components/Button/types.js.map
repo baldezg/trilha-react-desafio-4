@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/components/Button/types.ts"],
+  "sourcesContent": ["export interface IButtonProps {\n    title: string;\n    onClick?: React.MouseEventHandler<HTMLButtonElement>;\n}"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}

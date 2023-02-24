@@ -13,7 +13,11 @@ const schema = yup
     password: yup
       .string()
       .min(6, "No minimo 6 caracteres")
-      .required("Campo obrigatório"),
+      .required("Campo obrigatório")
+      .matches(
+        /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])$/,
+        'Senha deve ter pelo menos uma letra maiúscula, um número e um caractere especial'
+      ),
   })
   .required();
 

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/components/Input/types.ts"],
+  "sourcesContent": ["import { Control } from \"react-hook-form\";\nimport { IFormLogin } from \"../../pages/Login/types\";\n\nexport interface IInputProps extends React.InputHTMLAttributes<HTMLInputElement> {\n    control: Control<IFormLogin, any>   \n    name: \"email\" | \"password\";\n    errorMessage?: string;\n}"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}
